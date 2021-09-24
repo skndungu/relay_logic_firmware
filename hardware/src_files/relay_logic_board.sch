@@ -20,7 +20,7 @@ U 1 1 6142EDCB
 P 3850 4450
 F 0 "J3" H 3850 3950 50  0000 C CNN
 F 1 "Screw_Terminal_01x09" H 3930 4401 50  0001 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-9-2.54_1x09_P2.54mm_Horizontal" H 3850 4450 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x09_P3.50mm_Horizontal" H 3850 4450 50  0001 C CNN
 F 3 "~" H 3850 4450 50  0001 C CNN
 	1    3850 4450
 	1    0    0    1   
@@ -873,7 +873,6 @@ Wire Wire Line
 	1075 4025 1075 4125
 Text Label 750  4375 2    50   ~ 0
 in1
-NoConn ~ 1075 4625
 Wire Wire Line
 	2650 4050 3650 4050
 Wire Wire Line
@@ -1195,7 +1194,7 @@ U 1 1 6142FE50
 P 2450 4350
 F 0 "J2" H 2450 3950 50  0000 C CNN
 F 1 "Screw_Terminal_01x07" H 2530 4301 50  0001 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-7-2.54_1x07_P2.54mm_Horizontal" H 2450 4350 50  0001 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x07_P3.50mm_Horizontal" H 2450 4350 50  0001 C CNN
 F 3 "~" H 2450 4350 50  0001 C CNN
 	1    2450 4350
 	-1   0    0    1   
@@ -1216,4 +1215,17 @@ Text Label 5125 3275 0    50   ~ 0
 ~reset
 Text Label 4425 2175 2    50   ~ 0
 ~reset
+$Comp
+L power:GND #PWR?
+U 1 1 614E51CB
+P 1075 4725
+F 0 "#PWR?" H 1075 4475 50  0001 C CNN
+F 1 "GND" H 1080 4552 50  0000 C CNN
+F 2 "" H 1075 4725 50  0001 C CNN
+F 3 "" H 1075 4725 50  0001 C CNN
+	1    1075 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 4725 1075 4625
 $EndSCHEMATC
